@@ -60,13 +60,33 @@ python -m uvicorn app.main:app --reload
 python -m pip install --no-build-isolation -e .[dev]
 ```
 
-## Пример запросов
-```bash
-# health
-curl http://127.0.0.1:8000/health
 
-# filters (по умолчанию ключ: change-me)
-curl -H 'X-API-Key: change-me' http://127.0.0.1:8000/api/v1/filters
+## Частая ошибка в PowerShell (`curl -H ...`)
+Если видишь ошибку `Cannot convert value ... to type IDictionary`, это из-за алиаса `curl` -> `Invoke-WebRequest`.
+Используй один из вариантов:
+
+```powershell
+# Вариант 1 (рекомендуется)
+$headers = @{ "X-API-Key" = "change-me" }
+Invoke-RestMethod -Uri "http://127.0.0.1:8000/api/v1/filters" -Headers $headers
+
+# Вариант 2 (настоящий curl.exe)
+curl.exe -H "X-API-Key: change-me" http://127.0.0.1:8000/api/v1/filters
+```
+
+## Пример запросов (Windows PowerShell)
+```powershell
+# В PowerShell curl = Invoke-WebRequest, поэтому заголовки передаются hashtable
+Invoke-RestMethod -Method GET -Uri "http://127.0.0.1:8000/health"
+
+$headers = @{ "X-API-Key" = "change-me" }
+Invoke-RestMethod -Method GET -Uri "http://127.0.0.1:8000/api/v1/filters" -Headers $headers
+```
+
+## Пример запросов (bash / Git Bash / WSL)
+```bash
+curl http://127.0.0.1:8000/health
+curl -H "X-API-Key: change-me" http://127.0.0.1:8000/api/v1/filters
 ```
 
 По умолчанию ключ: `change-me`, заголовок: `X-API-Key`.
