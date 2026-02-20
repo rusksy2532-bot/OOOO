@@ -26,12 +26,38 @@
 3. Создай первый токен + свечи в БД (черновые данные), затем запусти `check_filter` и `run_backtest`.
 4. Следующий рабочий шаг в коде: реализовать collector для Pump.fun WebSocket и запись в `tokens`.
 
-## Быстрый старт
+## Быстрый старт (Windows PowerShell)
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install -e .[dev]
+python -m uvicorn app.main:app --reload
+```
+
+## Быстрый старт (Linux/macOS)
 ```bash
 python -m venv .venv
 source .venv/bin/activate
-pip install -e .[dev]
-uvicorn app.main:app --reload
+python -m pip install --upgrade pip
+python -m pip install -e .[dev]
+python -m uvicorn app.main:app --reload
+```
+
+## Почему `uvicorn` «не распознано»
+В PowerShell это обычно значит, что venv не активирован или Scripts не в PATH.
+Надёжный запуск без зависимости от PATH:
+```powershell
+python -m uvicorn app.main:app --reload
+```
+
+## Если `pip install -e .[dev]` падает на build dependencies
+1. Убедись, что используешь свежий pip (`python -m pip install --upgrade pip`).
+2. Запускай через `python -m pip`, а не `pip`.
+3. Проверь, что venv активирован.
+4. Если в сети прокси/ограничения, попробуй без изоляции сборки:
+```powershell
+python -m pip install --no-build-isolation -e .[dev]
 ```
 
 ## Пример запросов
