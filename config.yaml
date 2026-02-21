@@ -1,0 +1,34 @@
+entry_filters:
+  curve_mc_min: 50000
+  curve_mc_max: 500000
+  age_minutes_min: 5
+  age_minutes_max: 600
+  volume_1h_min: 500
+  volume_surge_min: 1.0
+  top10_pct_max: 55
+  top1_pct_max: 20
+  fresh_top_holders_pct_max: 35
+  early_dump_pct_max: 50
+  bundle_supply_pct_max: 12
+  sniper_supply_pct_max: 8
+  dev_past_rugs_max: 5
+  dev_migrated_count_min: 2
+  curve_progress_min: 60
+  curve_progress_max: 75
+
+exit_triggers:
+  lp_removal: true
+  curve_reversal: true
+  whale_dump: true
+  sudden_sell_dominance: true
+  volume_collapse: true
+  post_migration_slippage_high: true
+
+execution:
+  slippage_bps: 80
+  fee_bps: 30
+
+strategy:
+  tp_pct: 50
+  sl_pct: -20
+  time_exit_minutes: 90

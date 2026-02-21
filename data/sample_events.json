@@ -1,0 +1,17 @@
+[
+  {"timestamp":"2026-01-01T00:00:00","event_type":"token_created","token_mint":"TOKEN1","token_name":"ALPHA"},
+  {"timestamp":"2026-01-01T00:10:00","event_type":"trade","token_mint":"TOKEN1","side":"buy","price":0.0010,"volume_usd":500},
+  {"timestamp":"2026-01-01T00:20:00","event_type":"trade","token_mint":"TOKEN1","side":"buy","price":0.0012,"volume_usd":700},
+  {"timestamp":"2026-01-01T00:30:00","event_type":"holder_snapshot","token_mint":"TOKEN1","top10_pct":38,"top1_pct":12,"bundle_wallets_count":2,"bundle_supply_pct":6,"fresh_top_holders_pct":18,"sniper_supply_pct":4,"dev_holding_pct":3,"diamond_hands_pct":71,"early_dump_pct":22,"avg_roi_early_buyers_pct":48,"avg_hold_minutes_early_buyers":35},
+  {"timestamp":"2026-01-01T00:31:00","event_type":"curve_progress","token_mint":"TOKEN1","progress_pct":68,"curve_mc":120000,"migrated":false},
+  {"timestamp":"2026-01-01T00:32:00","event_type":"dev_history","token_mint":"TOKEN1","past_tokens_count":12,"migrated_count":6,"dead_on_curve_count":3,"median_roi_pct":41},
+  {"timestamp":"2026-01-01T00:50:00","event_type":"trade","token_mint":"TOKEN1","side":"sell","price":0.0016,"volume_usd":1000},
+  {"timestamp":"2026-01-01T01:10:00","event_type":"trade","token_mint":"TOKEN1","side":"sell","price":0.0017,"volume_usd":800,"risk_exit":true},
+
+  {"timestamp":"2026-01-02T00:00:00","event_type":"token_created","token_mint":"TOKEN2","token_name":"BETA"},
+  {"timestamp":"2026-01-02T00:05:00","event_type":"trade","token_mint":"TOKEN2","side":"buy","price":0.0010,"volume_usd":100},
+  {"timestamp":"2026-01-02T00:20:00","event_type":"holder_snapshot","token_mint":"TOKEN2","top10_pct":72,"top1_pct":28,"bundle_wallets_count":5,"bundle_supply_pct":22,"fresh_top_holders_pct":56,"sniper_supply_pct":31,"dev_holding_pct":11,"diamond_hands_pct":33,"early_dump_pct":65,"avg_roi_early_buyers_pct":5,"avg_hold_minutes_early_buyers":10},
+  {"timestamp":"2026-01-02T00:25:00","event_type":"curve_progress","token_mint":"TOKEN2","progress_pct":35,"curve_mc":40000,"migrated":false},
+  {"timestamp":"2026-01-02T00:26:00","event_type":"dev_history","token_mint":"TOKEN2","past_tokens_count":8,"migrated_count":1,"dead_on_curve_count":7,"median_roi_pct":-25},
+  {"timestamp":"2026-01-02T00:40:00","event_type":"trade","token_mint":"TOKEN2","side":"sell","price":0.0006,"volume_usd":120}
+]

@@ -1,0 +1,2 @@
+token_mint,entry_time,exit_time,entry_price,exit_price,roi_pct,exit_reason,hold_minutes
+TOKEN1,2026-01-01 00:10:00,2026-01-01 00:50:00,0.001008,0.0015872,57.16031746031746,TP,40.0
