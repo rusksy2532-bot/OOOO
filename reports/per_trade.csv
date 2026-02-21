@@ -1,0 +1,2 @@
+token_mint,entry_ts,exit_ts,entry_price,exit_price,qty,roi_pct,reason_exit
+MintAlpha111,1700000010,1700000400,0.0010249999999999999,0.0016575,975.6097560975611,61.70731707317074,time_exit

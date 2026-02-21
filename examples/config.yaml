@@ -1,0 +1,26 @@
+entry_filters:
+  min_curve_mc: 5000
+  max_curve_mc: 500000
+  min_age_minutes: 2
+  max_age_minutes: 720
+  min_volume_1h: 1000
+  volume_surge_min: 0.8
+  max_top10_pct: 35
+  max_top1_pct: 12
+  max_fresh_top_holders_pct: 50
+  max_early_dump_pct: 40
+  max_bundle_supply_pct: 20
+  max_sniper_supply_pct: 15
+  dev_history:
+    max_past_rugs: 5
+    min_migrated_count: 1
+  curve_progress_min: 60
+  curve_progress_max: 75
+
+exit_triggers:
+  - lp_removal
+  - curve_reversal
+  - whale_dump
+  - sell_dominance
+  - volume_collapse
+  - post_migration_slippage_high

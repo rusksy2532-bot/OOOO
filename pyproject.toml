@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "token-analytics-framework"
+version = "0.1.0"
+description = "Pump.fun/Solana token analytics + backtest framework"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pydantic>=2.6",
+  "PyYAML>=6.0",
+]
+
+[project.scripts]
+token-analytics = "token_analytics.cli.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

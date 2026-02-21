@@ -1,0 +1,15 @@
+{
+  "total_trades": 1,
+  "winrate": 1.0,
+  "avg_roi_pct": 61.70731707317074,
+  "median_roi_pct": 61.70731707317074,
+  "profit_factor": 61707317073.17074,
+  "max_drawdown_pct": 0.0,
+  "expectancy_pct": 61.70731707317074,
+  "avg_holding_seconds": 390.0,
+  "calibration": {
+    "brier_tp2": 0.25,
+    "precision_tp2": 0.0,
+    "recall_tp2": 0.0
+  }
+}
