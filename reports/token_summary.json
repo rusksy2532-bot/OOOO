@@ -1,0 +1,39 @@
+{
+  "MintAlpha111": {
+    "filter_pass": true,
+    "fail_reasons": [],
+    "score": 65.29,
+    "trade": {
+      "token_mint": "MintAlpha111",
+      "entry_ts": 1700000010,
+      "exit_ts": 1700000400,
+      "entry_price": 0.0010249999999999999,
+      "exit_price": 0.0016575,
+      "qty": 975.6097560975611,
+      "roi_pct": 61.70731707317074,
+      "reason_exit": "time_exit"
+    },
+    "tp_probabilities": {
+      "tp_1_5": 1.0,
+      "tp_2": 0.0,
+      "tp_3": 0.0,
+      "tp_5": 0.0
+    }
+  },
+  "MintBeta222": {
+    "filter_pass": false,
+    "fail_reasons": [
+      "FAIL curve_mc: 2500 < min 5000",
+      "FAIL age_minutes: 1.6666666666666667 < min 2",
+      "FAIL volume_1h: 500.0 < min 1000",
+      "FAIL curve_progress_pct: 40 < min 60"
+    ],
+    "score": 41.0,
+    "tp_probabilities": {
+      "tp_1_5": 1.0,
+      "tp_2": 0.0,
+      "tp_3": 0.0,
+      "tp_5": 0.0
+    }
+  }
+}

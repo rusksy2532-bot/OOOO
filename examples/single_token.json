@@ -1,0 +1,29 @@
+{
+  "tokens": [
+    {
+      "token_name": "ALPHA",
+      "token_mint": "MintAlpha111",
+      "deployer": "DevWalletA",
+      "created_ts": 1700000000,
+      "events": [
+        {"ts": 1700000010, "event_type": "trade", "payload": {"side": "buy", "price": 0.001, "usd_size": 400, "curve_mc": 8000}},
+        {"ts": 1700000100, "event_type": "trade", "payload": {"side": "buy", "price": 0.0012, "usd_size": 800, "curve_mc": 10000}},
+        {"ts": 1700000200, "event_type": "trade", "payload": {"side": "sell", "price": 0.0011, "usd_size": 200, "curve_mc": 9800}},
+        {"ts": 1700000300, "event_type": "curve_progress", "payload": {"progress_pct": 68}},
+        {"ts": 1700000400, "event_type": "trade", "payload": {"side": "buy", "price": 0.0017, "usd_size": 1200, "curve_mc": 14000}},
+        {"ts": 1700000500, "event_type": "migration", "payload": {"to_dex": "raydium"}}
+      ]
+    },
+    {
+      "token_name": "BETA",
+      "token_mint": "MintBeta222",
+      "deployer": "DevWalletB",
+      "created_ts": 1700001000,
+      "events": [
+        {"ts": 1700001010, "event_type": "trade", "payload": {"side": "buy", "price": 0.002, "usd_size": 200, "curve_mc": 3000}},
+        {"ts": 1700001100, "event_type": "trade", "payload": {"side": "sell", "price": 0.0016, "usd_size": 300, "curve_mc": 2500}},
+        {"ts": 1700001200, "event_type": "curve_progress", "payload": {"progress_pct": 40}}
+      ]
+    }
+  ]
+}
