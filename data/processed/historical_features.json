@@ -1,0 +1,14 @@
+[
+  {
+    "curve_progress_pct": 61,
+    "top10_pct": 45,
+    "volume_surge": 1.8,
+    "buy_ratio_5m": 0.6,
+    "sniper_supply_pct": 5,
+    "age_minutes": 50,
+    "tp_1_5x": true,
+    "tp_2x": false,
+    "tp_3x": false,
+    "tp_5x": false
+  }
+]
