@@ -1,0 +1,13 @@
+[
+  {
+    "token_mint": "TOKEN1",
+    "status": "traded",
+    "roi_pct": 57.16031746031746,
+    "exit_reason": "TP"
+  },
+  {
+    "token_mint": "TOKEN2",
+    "status": "filtered",
+    "reasons": "FAIL curve_mc: 40000.0000 < min 50000 | FAIL volume_1h: 220.0000 < min 500 | FAIL top10_pct: 72.0000 > max 55 | FAIL top1_pct: 28.0000 > max 20 | FAIL fresh_top_holders_pct: 56.0000 > max 35 | FAIL early_dump_pct: 65.0000 > max 50 | FAIL bundle_supply_pct: 22.0000 > max 12 | FAIL sniper_supply_pct: 31.0000 > max 8 | FAIL dev_past_rugs: 7.0000 > max 5 | FAIL dev_migrated_count: 1.0000 < min 2 | FAIL curve_progress_pct: 35.0000 < min 60"
+  }
+]

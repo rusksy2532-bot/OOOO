@@ -1,0 +1,5 @@
+[
+  {"volume_1h": 2200, "curve_progress_pct": 70, "top10_pct": 40, "hit_1_5x": true, "hit_2x": true, "hit_3x": false, "hit_5x": false},
+  {"volume_1h": 1800, "curve_progress_pct": 65, "top10_pct": 36, "hit_1_5x": true, "hit_2x": false, "hit_3x": false, "hit_5x": false},
+  {"volume_1h": 500, "curve_progress_pct": 30, "top10_pct": 75, "hit_1_5x": false, "hit_2x": false, "hit_3x": false, "hit_5x": false}
+]
